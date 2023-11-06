@@ -3,47 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Frutiger Aero Style Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Windows 7 Style Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/7.css"> <!-- Include 7.css framework -->
+    <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-            <h1 class="title">Sophomore's Portfolio</h1>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
+    <div class="window">
+        <div class="title-bar">
+            <div class="title-bar-text">Sophomore's Portfolio</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <ul class="tree-view">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
             <section id="about" class="section about">
                 <h2>About Me</h2>
-                <p>I am a sophomore passionate about design and technology, and this is my journey...</p>
+                <p>I am a sophomore passionate about design and technology...</p>
             </section>
             <section id="projects" class="section projects">
                 <h2>Projects</h2>
-                <div class="project-item">
-                    <img src="project1.jpg" alt="Project 1" class="project-image">
-                    <h3 class="project-title">Project One</h3>
-                    <p class="project-description">An exploration of geometric forms and sustainable materials...</p>
-                </div>
-                <!-- More projects -->
+                <!-- Project articles or divs go here -->
             </section>
             <section id="contact" class="section contact">
                 <h2>Contact</h2>
-                <form id="contact-form">
-                    <!-- Contact form fields -->
-                </form>
+                <!-- Contact form goes here -->
             </section>
-        </main>
-        
-        <footer class="footer">
-            <p>Copyright © 2023. All Rights Reserved.</p>
-        </footer>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
