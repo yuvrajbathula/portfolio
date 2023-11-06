@@ -7,38 +7,43 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav id="navbar">
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Welcome to my portfolio. I am a sophomore with a passion for design and technology...</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <!-- Project articles or divs go here -->
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <form id="contact-form">
-                <!-- Contact form fields -->
-            </form>
-        </section>
-    </main>
-    
-    <footer>
-        <p>Copyright © 2023 by Me</p>
-    </footer>
-    
-    <script src="script.js"></script>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Sophomore's Portfolio</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <section id="about" class="section about">
+                <h2>About Me</h2>
+                <p>I am a sophomore passionate about design and technology, and this is my journey...</p>
+            </section>
+            <section id="projects" class="section projects">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Project 1" class="project-image">
+                    <h3 class="project-title">Project One</h3>
+                    <p class="project-description">An exploration of geometric forms and sustainable materials...</p>
+                </div>
+                <!-- More projects -->
+            </section>
+            <section id="contact" class="section contact">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <!-- Contact form fields -->
+                </form>
+            </section>
+        </main>
+        
+        <footer class="footer">
+            <p>Copyright © 2023. All Rights Reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
