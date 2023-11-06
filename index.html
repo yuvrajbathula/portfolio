@@ -3,40 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows 7 Style Portfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/7.css"> <!-- Include 7.css framework -->
-    <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
+    <title>Dark Themed Portfolio</title>
+    <link rel="stylesheet" href="https://unpkg.com/7.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Custom styles for dark theme */
+        body {
+            background-image: url('/img/Moonlight.png');
+            background-size: cover;
+            color: #fff;
+        }
+        .window {
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black for dark theme */
+        }
+        /* ... other styles ... */
+    </style>
 </head>
 <body>
-    <div class="window">
-        <div class="title-bar">
-            <div class="title-bar-text">Sophomore's Portfolio</div>
-            <div class="title-bar-controls">
-                <button aria-label="Minimize"></button>
-                <button aria-label="Maximize"></button>
-                <button aria-label="Close"></button>
-            </div>
-        </div>
-        <div class="window-body">
-            <ul class="tree-view">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <section id="about" class="section about">
-                <h2>About Me</h2>
-                <p>I am a sophomore passionate about design and technology...</p>
-            </section>
-            <section id="projects" class="section projects">
-                <h2>Projects</h2>
-                <!-- Project articles or divs go here -->
-            </section>
-            <section id="contact" class="section contact">
-                <h2>Contact</h2>
-                <!-- Contact form goes here -->
-            </section>
-        </div>
-    </div>
+    <!-- Portfolio structure using 7.css components -->
+    <!-- ... -->
     <script src="script.js"></script>
 </body>
 </html>
