@@ -1,0 +1,44 @@
+body {
+    font-family: 'Arial', sans-serif; /* Substitute for Frutiger Aero if available */
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+section {
+    padding: 2em;
+    margin: 1em 0;
+    background-color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+}
