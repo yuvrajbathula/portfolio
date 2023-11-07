@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dark Themed Portfolio</title>
+    <title>Portfolio - Yuvraj Bathula</title>
     <link rel="stylesheet" href="https://unpkg.com/7.css">
     <link rel="stylesheet" href="styles.css">
     <style>
@@ -11,17 +11,101 @@
         body {
             background-image: url('/img/Moonlight.png');
             background-size: cover;
-            color: #fff;
+            color: black;
         }
         .window {
             background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black for dark theme */
         }
+        .black::before,
+  .black > .title-bar {
+    background-color: #0e0913;
+  }
+  .center {
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.pfp {
+    border-radius: 50%;
+
+}
         /* ... other styles ... */
     </style>
 </head>
 <body>
-    <!-- Portfolio structure using 7.css components -->
-    <!-- ... -->
+
+    <div class="window black glass active center" style="max-width: 30%">
+        <div class="title-bar">
+          <div class="title-bar-text">Welcome!</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body has-space">
+          <menu role="tablist">
+            <button role="tab" aria-controls="main" aria-selected="true">Home</button>
+            <button role="tab" aria-controls="skills">Skills</button>
+            <button role="tab" aria-controls="about">About</button>
+          </menu>
+          <!--homepage start-->
+          <article role="tabpanel" id="main">   
+            <center><img height="150" class="pfp"src="https://avatars.githubusercontent.com/u/71886443?v=4"></img></center>
+            <center><h4>Welcome to my portfolio!</h4></center>
+            <fieldset>
+              <legend>Welcome!</legend>
+              <p>Hello, I am Yuvraj Bathula, a 15 year old fullstack developer who knows multiple programming languages such as HTML, CSS and JavaScript. I am also learning TypeScript so that I can use it while making apps in React, Vue, or Angular. I have expeirence with React (Native) so far.</p>
+            </fieldset>
+            <section class="field-row">
+            <center><p>Click around on this site to learn more about me.</p></center>
+            </section>
+          </article>
+          <!--homepage end-->
+      <!--My skills start-->
+          <article role="tabpanel" hidden id="skills">
+            <center><img height="150" src="/img/visual-studio.jpg"></img></center>
+            <center><h4>My Skills</h4></center>
+            <p>Here are some of my skills: </p>
+            <fieldset>
+              <legend>Programming Languages</legend>
+              <ul role="listbox" class="has-shadow has-hover">
+                <li role="option">HTML</li>
+                <li role="option">CSS</li>
+                <li role="option">JavaScript</li>
+                <li role="option">TypeScript (learning)</li>
+                <li role="option">C#</li>
+                <li role="option">Java (learning)</li>
+              </ul>
+            </fieldset>
+            <fieldset>
+            <legend>Miscellaneous Skills</legend>
+            <ul role="listbox" class="has-shadow has-hover">
+                <li role="option">Video Editing</li>
+                <li role="option">Linux</li>
+                <li role="option">Sysadmin</li>
+                <li role="option">Batch Scriping</li>
+              </ul>
+            </fieldset>
+            <section class="field-row">
+            <center><p>Write something here later. Write something here later. Write something here later. Write something here later. Write something here later. Write something here later. Write something here later. </p></center>
+            </section>
+          </article>
+          <!--My skills end-->
+      
+          <article role="tabpanel" hidden id="about">
+            <p></p>
+
+          </article>
+          <section class="field-row" style="justify-content: flex-end">
+            <button class="default">OK</button>
+          </section>
+        </div>
+      </div>
+ 
     <script src="script.js"></script>
 </body>
 </html>
